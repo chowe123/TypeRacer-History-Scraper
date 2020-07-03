@@ -7,7 +7,7 @@ def scrape(url, ChromeDriverPath):
     scrape downloads all races in the race history of a profile provided by url
     scrape(typeracer race history URL, ChromeDriverPath) -> List of Raw TypeRacer Data
     """
-    driver = webdriver.Chrome("C:/Users/Earl/Desktop/Temp 2/chromedriver/chromedriver.exe")
+    driver = webdriver.Chrome(ChromeDriverPath)
     driver.get(url)
     data = []
     while(1):
